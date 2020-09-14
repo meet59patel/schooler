@@ -1,7 +1,14 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Schooler
+![Schooler-Logo](https://user-images.githubusercontent.com/45785817/93096463-0e2add80-f6c2-11ea-9284-61f7feaeb9a3.jpeg)
 
-## Available Scripts
 
+> Schooler is an academics manager, planner and organizer - developed using React, MongoDB, Express and NodeJS  
+  
+
+******  
+  
+## Available Scripts  
+  
 In the project directory, you can run:
 
 ### `yarn start`
@@ -59,10 +66,7 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/ma
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
 
-### Deployment
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
+## License
 
-### `yarn build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+This project is licensed under the MIT License - Copyright (c) 2020 Meet Patel
