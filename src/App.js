@@ -1,26 +1,65 @@
-import React from 'react';
-import logo from './logo.svg';
+import React from "react";
 import './App.css';
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
+import "./assets/plugins/nucleo/css/nucleo.css";
+import "@fortawesome/fontawesome-free/css/all.min.css";
+import "./assets/scss/argon-dashboard-react.scss";
+import AdminLayout from "./layouts/Admin.js";
+import AuthLayout from "./layouts/Auth.js";
 
-function App() {
+import {useUserState} from './context/UserContext.js'
+
+export default function App() {
+
+  var {isAuthenticated}  = useUserState()
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Switch>
+        <Route exact path="/" render={() => <Redirect to="/admin" />} />
+        <PrivateRoute path="/admin" component={AdminLayout} />
+        <PublicRoute path="/auth" component={AuthLayout} />
+
+      </Switch>
+    </BrowserRouter>
   );
+
+
+  function PrivateRoute({ component, ...rest }) {
+    return (
+      <Route
+        {...rest}
+        render={props =>
+          isAuthenticated ? (
+            React.createElement(component, props)
+          ) : (
+            <AuthLayout {...props} />
+          )
+        }
+      />
+    );
+  }
+
+  function PublicRoute({ component, ...rest }) {
+    return (
+      <Route
+        {...rest}
+        render={props =>
+          isAuthenticated ? (
+            <Redirect
+              to={{
+                pathname: "/",
+              }}
+            />
+          ) : (
+            React.createElement(component, props)
+          )
+        }
+      />
+    );
+  }
+
+  
+
 }
 
-export default App;
