@@ -84,9 +84,9 @@ function AdminNavbar(props) {
                     <span>Support</span>
                   </DropdownItem>
                   <DropdownItem divider />
-                  <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+                  <DropdownItem href="#pablo" onClick={()=>{signOut(userDispatch,props.history)}}>
                     <i className="ni ni-user-run" />
-                    <span onClick={()=>{signOut(userDispatch,props.history)}}>Logout</span>
+                    <span>Logout</span>
                   </DropdownItem>
                 </DropdownMenu>
               </UncontrolledDropdown>

@@ -1,7 +1,8 @@
-import React from "react";
+import React,{useState} from "react";
 import { NavLink as NavLinkRRD, Link } from "react-router-dom";
 // nodejs library to set properties for components
 import { PropTypes } from "prop-types";
+import {useUserDispatch,signOut} from '../../context/UserContext';
 
 // reactstrap components
 import {
@@ -26,39 +27,27 @@ import {
   Col
 } from "reactstrap";
 
-class Sidebar extends React.Component {
-  state = {
-    collapseOpen: false
-  };
-  constructor(props) {
-    super(props);
-    this.activeRoute.bind(this);
-  }
-  // verifies if routeName is the one active (in browser input)
-  activeRoute(routeName) {
-    return this.props.location.pathname.indexOf(routeName) > -1 ? "active" : "";
-  }
-  // toggles collapse between opened and closed (true/false)
-  toggleCollapse = () => {
-    this.setState({
-      collapseOpen: !this.state.collapseOpen
-    });
+function Sidebar(props) {
+
+  var userDispatch = useUserDispatch();
+  const [collapseOpen,setCollapseOpen] = useState(false);
+
+  const toggleCollapse =()=> {
+      setCollapseOpen(!collapseOpen);
   };
   // closes the collapse
-  closeCollapse = () => {
-    this.setState({
-      collapseOpen: false
-    });
+  const closeCollapse =()=> {
+    setCollapseOpen(false);
   };
   // creates the links that appear in the left menu / Sidebar
-  createLinks = routes => {
+  const createLinks = (routes)=>{
     return routes.map((prop, key) => {
       return (
         <NavItem key={key}>
           <NavLink
             to={prop.layout + prop.path}
             tag={NavLinkRRD}
-            onClick={this.closeCollapse}
+            onClick={closeCollapse}
             activeClassName="active"
           >
             <i className={prop.icon} />
@@ -68,8 +57,9 @@ class Sidebar extends React.Component {
       );
     });
   };
-  render() {
-    const { routes, logo } = this.props;
+
+  
+    const { routes, logo } = props;
     let navbarBrandProps;
     if (logo && logo.innerLink) {
       navbarBrandProps = {
@@ -93,7 +83,7 @@ class Sidebar extends React.Component {
           <button
             className="navbar-toggler"
             type="button"
-            onClick={this.toggleCollapse}
+            onClick={toggleCollapse}
           >
             <span className="navbar-toggler-icon" />
           </button>
@@ -156,7 +146,7 @@ class Sidebar extends React.Component {
                   <span>Support</span>
                 </DropdownItem>
                 <DropdownItem divider />
-                <DropdownItem href="#pablo" onClick={e => e.preventDefault()}>
+                <DropdownItem href="#pablo" onClick={()=> signOut(userDispatch,props.history)}>
                   <i className="ni ni-user-run" />
                   <span>Logout</span>
                 </DropdownItem>
@@ -164,7 +154,7 @@ class Sidebar extends React.Component {
             </UncontrolledDropdown>
           </Nav>
           {/* Collapse */}
-          <Collapse navbar isOpen={this.state.collapseOpen}>
+          <Collapse navbar isOpen={collapseOpen}>
             {/* Collapse header */}
             <div className="navbar-collapse-header d-md-none">
               <Row>
@@ -185,7 +175,7 @@ class Sidebar extends React.Component {
                   <button
                     className="navbar-toggler"
                     type="button"
-                    onClick={this.toggleCollapse}
+                    onClick={toggleCollapse}
                   >
                     <span />
                     <span />
@@ -210,7 +200,7 @@ class Sidebar extends React.Component {
               </InputGroup>
             </Form>
             {/* Navigation */}
-            <Nav navbar>{this.createLinks(routes)}</Nav>
+            <Nav navbar>{createLinks(routes)}</Nav>
             {/* Divider */}
             <hr className="my-3" />
             {/* Heading */}
@@ -249,7 +239,6 @@ class Sidebar extends React.Component {
       </Navbar>
     );
   }
-}
 
 Sidebar.defaultProps = {
   routes: [{}]
