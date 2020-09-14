@@ -1,5 +1,6 @@
 import React from "react";
 
+import {Link} from 'react-router-dom';
 // reactstrap components
 import {
   Button,
@@ -118,13 +119,9 @@ function Login(props) {
               </a>
             </Col>
             <Col className="text-right" xs="6">
-              <a
-                className="text-light"
-                href="#pablo"
-                onClick={e => e.preventDefault()}
-              >
-                <small>Create new account</small>
-              </a>
+              <Link to='/auth/register' className="text-light">
+               <small>Create new account</small> 
+              </Link>
             </Col>
           </Row>
         </Col>
