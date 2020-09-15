@@ -1,14 +1,36 @@
 # Schooler
+
 ![Schooler-Logo](https://user-images.githubusercontent.com/45785817/93096463-0e2add80-f6c2-11ea-9284-61f7feaeb9a3.jpeg)
 
+#### Schooler is an academics manager, planner and organizer - developed using React, MongoDB, Express and NodeJS
 
-> Schooler is an academics manager, planner and organizer - developed using React, MongoDB, Express and NodeJS  
-  
+---
 
-******  
-  
-## Available Scripts  
-  
+## Features
+
+-   Dashboards: Schedule and Assignments
+-   Timetable
+-   Attendance manager
+-   Courses Manager - including Instructor information
+-   Dark Mode!
+-   Notifications
+-   Import/Export Data
+-   Online Lecture Links Manager
+
+## Technology Stack
+
+| **Tech List :blue_book::notebook:** | **Tech List :blue_book::notebook:** |
+| ----------------------------------- | ----------------------------------- |
+| React                               | NodeJS                              |
+| Express                             | MongoDB                             |
+| Material UI                         | Heroku                              |
+| MongoDB Atlas                       | Mongoose                            |
+| Passport                            | OAuth                               |
+
+---
+
+## Available Scripts
+
 In the project directory, you can run:
 
 ### `yarn start`
@@ -65,7 +87,6 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/ma
 ### Advanced Configuration
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
 
 ## License
 
