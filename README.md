@@ -27,6 +27,9 @@
 | MongoDB Atlas                       | Mongoose                            |
 | Passport                            | OAuth                               |
 
+
+
+### Schooler Backend Repository: [schooler-server](https://github.com/meet59patel/schooler-server/)
 ---
 
 ## Available Scripts
