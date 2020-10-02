@@ -14,15 +14,15 @@ This project is being mentored by [Meet Patel](https://github.com/meet59patel) a
 
 ## Git Commands to get you started 
 
-1. Fork the repository 
-2. Now clone the forked repository to your machine. Go to your GitHub account, open the forked repository, click on the clone button and then click the _copy to clipboard_ icon.
+1. <b> Fork the repository </b> 
+2. <b> Now clone the forked repository to your machine. Go to your GitHub account, open the forked repository, click on the clone button and then click the _copy to clipboard_ icon. </b>
 
 Open a terminal and run the following git command:
 
 ```
 git clone https://github.com/meet59patel/schooler
 ```
-3. Create a branch
+3. <b>Create a branch</b>
 
 Change to the repository directory on your computer (if you are not already there):
 
@@ -44,9 +44,9 @@ git checkout -b add-contributing
 
 (The name of the branch does not need to have the word _add_ in it, but it's a reasonable thing to include because the purpose of this branch is to add your name to a list.)
 
-4.  Push changes to GitHub
+4. <b> Push changes to GitHub</B>
 
-Push your changes using the command `git push`:
+Push your changes using the command `git push` :
 ```
 git push origin <add-your-branch-name>
 ```
