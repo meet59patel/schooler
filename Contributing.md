@@ -85,6 +85,13 @@ This section guides you through submitting a bug report for Schooler. Following 
 
 - Adding a visual of hte bugs helps pinpoint he issues being faced.
 
+Template :
+
+- Title
+- Description
+- Hardware/Software details
+- Behavior
+
 ## Feature enhancement/request
 
 Name: Feature Request - "Name of feature"
