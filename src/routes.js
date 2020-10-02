@@ -1,60 +1,69 @@
 import Index from "./views/Index.js";
-import Profile from "./views/examples/Profile.js";
-import Maps from "./views/examples/Maps.js";
-import Register from "./views/examples/Register.js";
-import Login from "./views/examples/Login.js";
-import Tables from "./views/examples/Tables.js";
-import Icons from "./views/examples/Icons.js";
+// Import componets here when they are created
 
 var routes = [
   {
     path: "/index",
     name: "Dashboard",
-    icon: "ni ni-tv-2 text-primary",
+    icon: "ni ni-tv-2 text-blue",
     component: Index,
     layout: "/admin"
   },
   {
-    path: "/icons",
-    name: "Icons",
-    icon: "ni ni-planet text-blue",
-    component: Icons,
+    path: "/time-table",
+    name: "Time Table",
+    icon: "ni ni-watch-time text-indigo",
+    component: Index, // Changes this when respective component is created.
     layout: "/admin"
   },
   {
-    path: "/maps",
-    name: "Maps",
-    icon: "ni ni-pin-3 text-orange",
-    component: Maps,
+    path: "/schedule",
+    name: "Schedule",
+    icon: "ni ni-calendar-grid-58 text-purple",
+    component: Index, // Changes this when respective component is created.
     layout: "/admin"
   },
   {
-    path: "/user-profile",
-    name: "User Profile",
-    icon: "ni ni-single-02 text-yellow",
-    component: Profile,
+    path: "/attendance",
+    name: "Attendance",
+    icon: "ni ni-badge text-red",
+    component: Index, // Changes this when respective component is created.
     layout: "/admin"
   },
   {
-    path: "/tables",
-    name: "Tables",
-    icon: "ni ni-bullet-list-67 text-red",
-    component: Tables,
+    path: "/assignments",
+    name: "Assignments",
+    icon: "ni ni-bullet-list-67 text-orange",
+    component: Index, // Changes this when respective compenent is created.
     layout: "/admin"
   },
   {
-    path: "/login",
-    name: "Login",
-    icon: "ni ni-key-25 text-info",
-    component: Login,
-    layout: "/auth"
+    path: "/storage",
+    name: "Storage",
+    icon: "ni ni-folder-17 text-yellow",
+    component: Index, // Changes this when respective compenent is created.
+    layout: "/admin"
   },
   {
-    path: "/register",
-    name: "Register",
-    icon: "ni ni-circle-08 text-pink",
-    component: Register,
-    layout: "/auth"
+    path: "/grades",
+    name: "Grades",
+    icon: "ni ni-trophy text-green",
+    component: Index, // Changes this when respective compenent is created.
+    layout: "/admin"
+  },
+  {
+    path: "/reminders",
+    name: "Reminders",
+    icon: "ni ni-time-alarm text-teal",
+    component: Index, // Changes this when respective compenent is created.
+    layout: "/admin"
+  },
+  {
+    path: "/quick-notes",
+    name: "Quick Notes",
+    icon: "ni ni-book-bookmark text-cyan",
+    component: Index, // Changes this when respective compenent is created.
+    layout: "/admin"
   }
 ];
 export default routes;
