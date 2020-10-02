@@ -1,4 +1,4 @@
-## Guidelines  for Contributing to Schooler
+## Guidelines  for Contributing to Schooler - SLoP
 
 This project is being mentored by [Meet Patel](https://github.com/meet59patel) and [Hemang Nakarani](https://github.com/HemangNakarani) under the Semester Long Projects by [DSC-DAIICT](https://slop.dscdaiict.in/)
 
