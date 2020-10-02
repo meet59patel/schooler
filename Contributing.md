@@ -51,3 +51,39 @@ Push your changes using the command `git push` :
 git push origin <add-your-branch-name>
 ```
 replacing `<add-your-branch-name>` with the name of the branch you created earlier
+
+## Bug report
+
+<b>Reporting Bugs</b>
+This section guides you through submitting a bug report for Schooler. Following these guidelines helps maintainers and the community understand your report 📝, reproduce the behavior 💻 💻, and find related reports 🔎.
+
+- Before creating bug reports, please gp through this list . 
+- When you are creating a bug report, please include as many details as possible. 
+- Fill out the required template, the information it asks for helps us resolve issues faster.
+
+## Submitting A Bug Report
+
+- Explain the problem and include the following  details to help maintainers reproduce the problem:
+
+1. Use a clear and descriptive title for the issue to identify the problem - 
+
+- Describe the exact steps which reproduce the problem in as many details as possible. For example, start by explaining how you started Atom, e.g. which command exactly you used in the terminal, or how you started Atom otherwise. 
+
+2. Describe the behavior you observed after following the steps and point out what exactly is the problem with that behavior.
+
+- Explain which behavior you expected to see instead and why. 
+- Include expected behavior and what went wrong.
+- Explain the steps to reproduce the behavior of the bug.
+
+3. The following infomation is a must
+
+- Operating System - Windows,Linux or Mac.
+- Browser
+- Local installations
+
+4. Include screenshots and animated GIFs which show you following the described steps and clearly demonstrate the problem. 
+
+- Adding a visual of hte bugs helps pinpoint he issues being faced.
+
+
+
