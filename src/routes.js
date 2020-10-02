@@ -1,4 +1,6 @@
 import Index from "./views/Index.js";
+import Register from "./views/examples/Register.js";
+import Login from "./views/examples/Login.js";
 // Import componets here when they are created
 
 var routes = [
@@ -64,6 +66,20 @@ var routes = [
     icon: "ni ni-book-bookmark text-cyan",
     component: Index, // Changes this when respective compenent is created.
     layout: "/admin"
+  },
+  {
+    path: "/login",
+    name: "Login",
+    icon: "ni ni-key-25 text-info",
+    component: Login,
+    layout: "/auth"
+  },
+  {
+    path: "/register",
+    name: "Register",
+    icon: "ni ni-circle-08 text-pink",
+    component: Register,
+    layout: "/auth"
   }
 ];
 export default routes;
