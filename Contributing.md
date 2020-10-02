@@ -85,5 +85,23 @@ This section guides you through submitting a bug report for Schooler. Following 
 
 - Adding a visual of hte bugs helps pinpoint he issues being faced.
 
+## Feature enhancement/request
+
+Name: Feature Request - "Name of feature"
+<br>
+About: "Explain in short . Please search for existing issues first . Also see CONTRIBUTING."
+
+## Please Describe The Problem To Be Solved
+
+Add the feature you want to update/solve. Explain it in detail,how are you planning to implement it,how do you envision it to work,the problems it would solve.
+
+## Suggest A Solution
+- Replace This Text: A concise description of your preferred solution. Things to address include:
+* Details of the technical implementation
+* Tradeoffs made in design decisions
+* Caveats and considerations for the future
+
+If there are multiple solutions, please present each one separately. Save comparisons for the very end.
+
 
 
