@@ -67,7 +67,7 @@ This section guides you through submitting a bug report for Schooler. Following 
 
 1. <b>Use a clear and descriptive title for the issue to identify the problem - </b>
 
-- Describe the exact steps which reproduce the problem in as many details as possible. For example, start by explaining how you started Atom, e.g. which command exactly you used in the terminal, or how you started Atom otherwise. 
+- Describe the exact steps which reproduce the problem in as many details as possible.
 
 2. <b>Describe the behavior you observed after following the steps and point out what exactly is the problem with that behavior - </b>
 
