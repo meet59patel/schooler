@@ -65,23 +65,23 @@ This section guides you through submitting a bug report for Schooler. Following 
 
 - Explain the problem and include the following  details to help maintainers reproduce the problem:
 
-1. Use a clear and descriptive title for the issue to identify the problem - 
+1. <b>Use a clear and descriptive title for the issue to identify the problem - </b>
 
 - Describe the exact steps which reproduce the problem in as many details as possible. For example, start by explaining how you started Atom, e.g. which command exactly you used in the terminal, or how you started Atom otherwise. 
 
-2. Describe the behavior you observed after following the steps and point out what exactly is the problem with that behavior.
+2. <b>Describe the behavior you observed after following the steps and point out what exactly is the problem with that behavior - </b>
 
 - Explain which behavior you expected to see instead and why. 
 - Include expected behavior and what went wrong.
 - Explain the steps to reproduce the behavior of the bug.
 
-3. The following infomation is a must
+3. <b>The following infomation is a must - </b>
 
 - Operating System - Windows,Linux or Mac.
 - Browser
 - Local installations
 
-4. Include screenshots and animated GIFs which show you following the described steps and clearly demonstrate the problem. 
+4. <b>Include screenshots and animated GIFs which show you following the described steps and clearly demonstrate the problem - </b>
 
 - Adding a visual of hte bugs helps pinpoint he issues being faced.
 
