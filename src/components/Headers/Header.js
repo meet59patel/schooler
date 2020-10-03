@@ -23,7 +23,7 @@ class Header extends React.Component {
                           >
                             Lab 5
                           </CardTitle>
-                          <span className="h2 font-weight-bold mb-0">
+                          <span className="h3 font-weight-bold mb-0">
                             IT-209<br/>
                           </span>
                           <span className="h4 font-weight-bold mb-0">
@@ -54,9 +54,9 @@ class Header extends React.Component {
                             tag="h5"
                             className="text-uppercase text-muted mb-0"
                           >
-                            Tutorial 4
+                            Tutorial 4 
                           </CardTitle>
-                          <span className="h2 font-weight-bold mb-0">
+                          <span className="h3 font-weight-bold mb-0">
                             CT-203<br/>
                           </span>
                           <span className="h4 font-weight-bold mb-0">
@@ -89,7 +89,7 @@ class Header extends React.Component {
                           >
                             Tutorial 2 
                           </CardTitle>
-                          <span className="h2 font-weight-bold mb-0">SC-220<br/></span>
+                          <span className="h3 font-weight-bold mb-0">SC-220<br/></span>
                           <span className="h4 font-weight-bold mb-0">
                             Prof. Gautam Datta
                           </span>
@@ -121,7 +121,7 @@ class Header extends React.Component {
                           >
                             Unit 2
                           </CardTitle>
-                          <span className="h2 font-weight-bold mb-0">
+                          <span className="h3 font-weight-bold mb-0">
                             HM-216 <br/>
                           </span>
                           <span className="h4 font-weight-bold mb-0">
