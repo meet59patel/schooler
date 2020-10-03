@@ -20,7 +20,7 @@ This project is being mentored by [Meet Patel](https://github.com/meet59patel) a
 Open a terminal and run the following git command:
 
 ```
-git clone https://github.com/meet59patel/schooler
+https://github.com/<your-username>/schooler.git
 ```
 3. <b>Create a branch.</b>
 
@@ -57,7 +57,7 @@ replacing `<add-your-branch-name>` with the name of the branch you created earli
 <b>Reporting Bugs</b>
 This section guides you through submitting a bug report for Schooler. Following these guidelines helps maintainers and the community understand your report 📝, reproduce the behavior 💻 💻, and find related reports 🔎.
 
-- Before creating bug reports, please gp through this list . 
+- Before creating bug reports, please go through this list . 
 - When you are creating a bug report, please include as many details as possible. 
 - Fill out the required template, the information it asks for helps us resolve issues faster.
 
