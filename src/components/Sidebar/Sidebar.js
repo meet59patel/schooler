@@ -208,21 +208,9 @@ function Sidebar(props) {
             {/* Navigation */}
             <Nav className="mb-md-3" navbar>
               <NavItem>
-                <NavLink href="">
-                  <i className="ni ni-spaceship" />
-                  About SLoP
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="">
-                  <i className="ni ni-palette" />
-                  OSS
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="">
-                  <i className="ni ni-ui-04" />
-                  Feedback
+                <NavLink href="https://github.com/meet59patel/schooler">
+                  <i className="fab fa-github" />
+                  Repository Link
                 </NavLink>
               </NavItem>
             </Nav>
