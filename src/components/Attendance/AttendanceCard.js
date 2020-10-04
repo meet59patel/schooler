@@ -31,7 +31,7 @@ let attendence = {
       datasets: [
         {
           data: [20, 80], // [absent, present]
-          backgroundColor: ["red", "green"]
+          backgroundColor: ["rgba(75, 192, 192, 1)", "rgba(54, 162, 235, 1)"]
         }
       ]
     }
