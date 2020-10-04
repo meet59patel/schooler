@@ -21,23 +21,26 @@ class Header extends React.Component {
                             tag="h5"
                             className="text-uppercase text-muted mb-0"
                           >
-                            Traffic
+                            Lab 5
                           </CardTitle>
-                          <span className="h2 font-weight-bold mb-0">
-                            350,897
+                          <span className="h3 font-weight-bold mb-0">
+                            IT-209<br/>
+                          </span>
+                          <span className="h4 font-weight-bold mb-0">
+                            Prof. A. Bhatt
                           </span>
                         </div>
                         <Col className="col-auto">
                           <div className="icon icon-shape bg-danger text-white rounded-circle shadow">
-                            <i className="fas fa-chart-bar" />
+                            <i className="fas fa-desktop" />
                           </div>
                         </Col>
                       </Row>
                       <p className="mt-3 mb-0 text-muted text-sm">
                         <span className="text-success mr-2">
-                          <i className="fa fa-arrow-up" /> 3.48%
+                          <i className="fa fa-check" /> Graded
                         </span>{" "}
-                        <span className="text-nowrap">Since last month</span>
+                        <span className="text-nowrap">23 Nov 2020</span>
                       </p>
                     </CardBody>
                   </Card>
@@ -51,23 +54,26 @@ class Header extends React.Component {
                             tag="h5"
                             className="text-uppercase text-muted mb-0"
                           >
-                            New users
+                            Tutorial 4 
                           </CardTitle>
-                          <span className="h2 font-weight-bold mb-0">
-                            2,356
+                          <span className="h3 font-weight-bold mb-0">
+                            CT-203<br/>
+                          </span>
+                          <span className="h4 font-weight-bold mb-0">
+                            Prof. H. Patil
                           </span>
                         </div>
                         <Col className="col-auto">
                           <div className="icon icon-shape bg-warning text-white rounded-circle shadow">
-                            <i className="fas fa-chart-pie" />
+                            <i className="fas fa-signal" />
                           </div>
                         </Col>
                       </Row>
                       <p className="mt-3 mb-0 text-muted text-sm">
                         <span className="text-danger mr-2">
-                          <i className="fas fa-arrow-down" /> 3.48%
+                          <i className="fas fa-times" /> Ungraded
                         </span>{" "}
-                        <span className="text-nowrap">Since last week</span>
+                        <span className="text-nowrap">24 Nov 2020</span>
                       </p>
                     </CardBody>
                   </Card>
@@ -81,21 +87,25 @@ class Header extends React.Component {
                             tag="h5"
                             className="text-uppercase text-muted mb-0"
                           >
-                            Sales
+                            Tutorial 2 
                           </CardTitle>
-                          <span className="h2 font-weight-bold mb-0">924</span>
+                          <span className="h3 font-weight-bold mb-0">SC-220<br/></span>
+                          <span className="h4 font-weight-bold mb-0">
+                            Prof. G. Datta
+                          </span>
                         </div>
                         <Col className="col-auto">
                           <div className="icon icon-shape bg-yellow text-white rounded-circle shadow">
-                            <i className="fas fa-users" />
+                            <i className="fas fa-plus" />
+                            <i className="fas fa-times" />
                           </div>
                         </Col>
                       </Row>
                       <p className="mt-3 mb-0 text-muted text-sm">
                         <span className="text-warning mr-2">
-                          <i className="fas fa-arrow-down" /> 1.10%
+                          <i className="fas fa-times" /> Ungraded
                         </span>{" "}
-                        <span className="text-nowrap">Since yesterday</span>
+                        <span className="text-nowrap">15 Nov 2020</span>
                       </p>
                     </CardBody>
                   </Card>
@@ -109,23 +119,26 @@ class Header extends React.Component {
                             tag="h5"
                             className="text-uppercase text-muted mb-0"
                           >
-                            Performance
+                            Unit 2
                           </CardTitle>
-                          <span className="h2 font-weight-bold mb-0">
-                            49,65%
+                          <span className="h3 font-weight-bold mb-0">
+                            HM-216 <br/>
+                          </span>
+                          <span className="h4 font-weight-bold mb-0">
+                            Prof. M. Mazumdar
                           </span>
                         </div>
                         <Col className="col-auto">
                           <div className="icon icon-shape bg-info text-white rounded-circle shadow">
-                            <i className="fas fa-percent" />
+                            <i className="fas fa-users" />
                           </div>
                         </Col>
                       </Row>
                       <p className="mt-3 mb-0 text-muted text-sm">
                         <span className="text-success mr-2">
-                          <i className="fas fa-arrow-up" /> 12%
+                          <i className="fas fa-check" /> Graded
                         </span>{" "}
-                        <span className="text-nowrap">Since last month</span>
+                        <span className="text-nowrap">8 Nov 2020</span>
                       </p>
                     </CardBody>
                   </Card>
