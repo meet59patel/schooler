@@ -17,7 +17,7 @@ function userReducer(state, action) {
 
 function UserProvider({ children }) {
   var [state, dispatch] = React.useReducer(userReducer, {
-    isAuthenticated: !!localStorage.getItem("id_token"),
+    isAuthenticated: !!localStorage.getItem("google_token")
   });
 
   return (
@@ -47,15 +47,14 @@ function useUserDispatch() {
 
 export { UserProvider, useUserState, useUserDispatch, loginUser, signOut };
 
-function loginUser(dispatch, history) {
-  localStorage.setItem('id_token', 1)
-          dispatch({ type: 'LOGIN_SUCCESS' })
-          history.push('/admin')
-
+function loginUser(dispatch, history, response) {
+  localStorage.setItem('google_token', response.tokenId);
+  dispatch({ type: 'LOGIN_SUCCESS' });
+  history.push('/admin');
 }
 
 function signOut(dispatch, history) {
-  localStorage.removeItem("id_token");
+  localStorage.removeItem('google_token');
   dispatch({ type: "SIGN_OUT_SUCCESS" });
   history.push("/auth/");
 }
