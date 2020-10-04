@@ -20,8 +20,8 @@
     "react-google-maps": "^9.4.5",
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
-    "reactstrap": "^8.5.1",
-    "yarn": "^1.22.10"
+    "reactstrap": "^8.5.1"
+    
   },
   "scripts": {
     "start": "react-scripts start",

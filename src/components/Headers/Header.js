@@ -27,7 +27,7 @@ class Header extends React.Component {
                             IT-209<br/>
                           </span>
                           <span className="h4 font-weight-bold mb-0">
-                            Prof. Amit Bhatt
+                            Prof. A. Bhatt
                           </span>
                         </div>
                         <Col className="col-auto">
@@ -40,7 +40,7 @@ class Header extends React.Component {
                         <span className="text-success mr-2">
                           <i className="fa fa-check" /> Graded
                         </span>{" "}
-                        <span className="text-nowrap">23 November 2020</span>
+                        <span className="text-nowrap">23 Nov 2020</span>
                       </p>
                     </CardBody>
                   </Card>
@@ -60,7 +60,7 @@ class Header extends React.Component {
                             CT-203<br/>
                           </span>
                           <span className="h4 font-weight-bold mb-0">
-                            Prof. Hemant Patil
+                            Prof. H. Patil
                           </span>
                         </div>
                         <Col className="col-auto">
@@ -73,7 +73,7 @@ class Header extends React.Component {
                         <span className="text-danger mr-2">
                           <i className="fas fa-times" /> Ungraded
                         </span>{" "}
-                        <span className="text-nowrap">24 November, 2020</span>
+                        <span className="text-nowrap">24 Nov 2020</span>
                       </p>
                     </CardBody>
                   </Card>
@@ -91,7 +91,7 @@ class Header extends React.Component {
                           </CardTitle>
                           <span className="h3 font-weight-bold mb-0">SC-220<br/></span>
                           <span className="h4 font-weight-bold mb-0">
-                            Prof. Gautam Datta
+                            Prof. G. Datta
                           </span>
                         </div>
                         <Col className="col-auto">
@@ -105,7 +105,7 @@ class Header extends React.Component {
                         <span className="text-warning mr-2">
                           <i className="fas fa-times" /> Ungraded
                         </span>{" "}
-                        <span className="text-nowrap">15 November, 2020</span>
+                        <span className="text-nowrap">15 Nov 2020</span>
                       </p>
                     </CardBody>
                   </Card>
@@ -125,7 +125,7 @@ class Header extends React.Component {
                             HM-216 <br/>
                           </span>
                           <span className="h4 font-weight-bold mb-0">
-                            Prof. Madhumita Mazumdar
+                            Prof. M. Mazumdar
                           </span>
                         </div>
                         <Col className="col-auto">
@@ -138,7 +138,7 @@ class Header extends React.Component {
                         <span className="text-success mr-2">
                           <i className="fas fa-check" /> Graded
                         </span>{" "}
-                        <span className="text-nowrap">8 November, 2020</span>
+                        <span className="text-nowrap">8 Nov 2020</span>
                       </p>
                     </CardBody>
                   </Card>
