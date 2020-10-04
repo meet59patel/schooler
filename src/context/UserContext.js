@@ -58,5 +58,3 @@ function signOut(dispatch, history) {
   dispatch({ type: "SIGN_OUT_SUCCESS" });
   history.push("/auth/");
 }
-
-
