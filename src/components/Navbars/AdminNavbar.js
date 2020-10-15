@@ -17,8 +17,10 @@ import {
   Container,
   Media
 } from "reactstrap";
+import { GoogleLogout } from 'react-google-login';
 
 import {useUserDispatch,signOut} from '../../context/UserContext';
+const GOOGLE_CLIENT_ID = process.env.REACT_APP_GOOGLE_CLIENT_ID || "";
 
 function AdminNavbar(props) {
 
@@ -84,10 +86,14 @@ function AdminNavbar(props) {
                     <span>Support</span>
                   </DropdownItem>
                   <DropdownItem divider />
-                  <DropdownItem href="#pablo" onClick={()=>{signOut(userDispatch,props.history)}}>
-                    <i className="ni ni-user-run" />
-                    <span>Logout</span>
-                  </DropdownItem>
+                  <GoogleLogout
+                    clientId={GOOGLE_CLIENT_ID}
+                    buttonText="Logout"
+                    onLogoutSuccess={() => {
+                      signOut(userDispatch, props.history);
+                    }}
+                    onFailure={console.log}
+                  />
                 </DropdownMenu>
               </UncontrolledDropdown>
             </Nav>
