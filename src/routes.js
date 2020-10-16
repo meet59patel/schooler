@@ -1,5 +1,6 @@
 import Index from "./views/Index.js";
-import Register from "./views/examples/Register.js";
+import Profile from "./views/examples/Profile.js";
+import Maps from "./views/examples/Maps.js";
 import Login from "./views/examples/Login.js";
 // Import componets here when they are created
 
@@ -72,13 +73,6 @@ var routes = [
     name: "Login",
     icon: "ni ni-key-25 text-info",
     component: Login,
-    layout: "/auth"
-  },
-  {
-    path: "/register",
-    name: "Register",
-    icon: "ni ni-circle-08 text-pink",
-    component: Register,
     layout: "/auth"
   }
 ];
