@@ -19,7 +19,7 @@ import {
 } from "reactstrap";
 import { GoogleLogout } from 'react-google-login';
 
-import {useUserDispatch,signOut} from '../../context/UserContext';
+import {useUserDispatch,signOut, useUserState} from '../../context/UserContext';
 const GOOGLE_CLIENT_ID = process.env.REACT_APP_GOOGLE_CLIENT_ID || "";
 
 function AdminNavbar(props) {
@@ -55,12 +55,12 @@ function AdminNavbar(props) {
                     <span className="avatar avatar-sm rounded-circle">
                       <img
                         alt="..."
-                        src={require("../../assets/img/theme/team-4-800x800.jpg")}
+                        src={useUserState().picture}
                       />
                     </span>
                     <Media className="ml-2 d-none d-lg-block">
                       <span className="mb-0 text-sm font-weight-bold">
-                        Jessica Jones
+                        {useUserState().name}
                       </span>
                     </Media>
                   </Media>

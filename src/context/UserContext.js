@@ -6,7 +6,7 @@ var UserDispatchContext = React.createContext();
 function userReducer(state, action) {
   switch (action.type) {
     case "LOGIN_SUCCESS":
-      return { ...state, isAuthenticated: true };
+      return { ...state, isAuthenticated: true, name: localStorage.name, picture: localStorage.picture };
     case "SIGN_OUT_SUCCESS":
       return { ...state, isAuthenticated: false };
     default: {
@@ -17,7 +17,9 @@ function userReducer(state, action) {
 
 function UserProvider({ children }) {
   var [state, dispatch] = React.useReducer(userReducer, {
-    isAuthenticated: !!localStorage.getItem("google_token")
+    isAuthenticated: !!localStorage.getItem("google_token"),
+    name: localStorage.getItem("name"),
+    picture: localStorage.getItem("picture"),
   });
 
   return (
@@ -49,6 +51,8 @@ export { UserProvider, useUserState, useUserDispatch, loginUser, signOut };
 
 function loginUser(dispatch, history, response) {
   localStorage.setItem('google_token', response.tokenId);
+  localStorage.setItem('name', response.profileObj.name);
+  localStorage.setItem('picture', response.profileObj.imageUrl);
   dispatch({ type: 'LOGIN_SUCCESS' });
   history.push('/admin');
 }
