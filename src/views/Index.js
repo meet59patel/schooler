@@ -36,15 +36,15 @@ import RecentlyAccessed from "../components/dashboard/RecentlyAccessed";
 
 const friendDetails = [{
   name: 'name1',
-  picture: 'https://lh5.googleusercontent.com/-c_qI1qFUiqI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucnU4NATEYF2mFRLBtU2XOFfLnIgFw/s96-c/photo.jpg',
+  picture: '../assets/img/theme/team-1-800x800.jpg',
   online: true
 },{
   name: 'name2',
-  picture: 'https://lh5.googleusercontent.com/-c_qI1qFUiqI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucnU4NATEYF2mFRLBtU2XOFfLnIgFw/s96-c/photo.jpg',
+  picture: '../assets/img/theme/team-2-800x800.jpg',
   online: true
 },{
   name: 'name3',
-  picture: "https://lh5.googleusercontent.com/-c_qI1qFUiqI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucnU4NATEYF2mFRLBtU2XOFfLnIgFw/s96-c/photo.jpg",
+  picture: '../assets/img/theme/team-3-800x800.jpg',
   online: false
 }];
 
@@ -191,7 +191,7 @@ class Index extends React.Component {
                                 <span className="avatar avatar-sm rounded-circle">
                                   <img
                                     alt="..."
-                                    src={data.picture}
+                                    src={require('../assets/img/theme/team-1-800x800.jpg')}
                                   />
                                 </span>
                               </Media>
