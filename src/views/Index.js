@@ -12,10 +12,10 @@ import {
   Card,
   CardHeader,
   CardBody,
+  Media,
   NavItem,
   NavLink,
   Nav,
-  Progress,
   Table,
   Container,
   Row,
@@ -33,6 +33,22 @@ import Header from "../components/Headers/Header.js";
 import AttendanceCard from "../components/Attendance/AttendanceCard.js";
 
 import RecentlyAccessed from "../components/dashboard/RecentlyAccessed";
+
+const friendDetails = [{
+  name: 'name1',
+  picture: 'https://lh5.googleusercontent.com/-c_qI1qFUiqI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucnU4NATEYF2mFRLBtU2XOFfLnIgFw/s96-c/photo.jpg',
+  online: true
+},{
+  name: 'name2',
+  picture: 'https://lh5.googleusercontent.com/-c_qI1qFUiqI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucnU4NATEYF2mFRLBtU2XOFfLnIgFw/s96-c/photo.jpg',
+  online: true
+},{
+  name: 'name3',
+  picture: "https://lh5.googleusercontent.com/-c_qI1qFUiqI/AAAAAAAAAAI/AAAAAAAAAAA/AMZuucnU4NATEYF2mFRLBtU2XOFfLnIgFw/s96-c/photo.jpg",
+  online: false
+}];
+
+const friendsHeader = ['Photo', 'Name', 'Status']
 
 class Index extends React.Component {
   constructor(props){
@@ -54,7 +70,7 @@ class Index extends React.Component {
     });
   };
   render() {
-    // const {filename, lastAccess} = this.state
+    // const {name, lastAccess} = this.state
     return (
       <>
         <Header />
@@ -124,7 +140,7 @@ class Index extends React.Component {
                 <CardHeader className="border-0">
                   <Row className="align-items-center">
                     <div className="col">
-                      <h3 className="mb-0">Recently Accessed files</h3>
+                      <h3 className="mb-0">Recently Accessed s</h3>
                     </div>
                     <div className="col text-right">
                       <Button
@@ -146,7 +162,7 @@ class Index extends React.Component {
                 <CardHeader className="border-0">
                   <Row className="align-items-center">
                     <div className="col">
-                      <h3 className="mb-0">Social traffic</h3>
+                      <h3 className="mb-0">Friends Online</h3>
                     </div>
                     <div className="col text-right">
                       <Button
@@ -162,89 +178,34 @@ class Index extends React.Component {
                 </CardHeader>
                 <Table className="align-items-center table-flush" responsive>
                   <thead className="thead-light">
-                    <tr>
-                      <th scope="col">Referral</th>
-                      <th scope="col">Visitors</th>
-                      <th scope="col" />
-                    </tr>
+                    <tr>{friendsHeader.map((h, i) => <th key={i}>{h}</th>)}</tr>
                   </thead>
                   <tbody>
-                    <tr>
-                      <th scope="row">Facebook</th>
-                      <td>1,480</td>
-                      <td>
-                        <div className="d-flex align-items-center">
-                          <span className="mr-2">60%</span>
-                          <div>
-                            <Progress
-                              max="100"
-                              value="60"
-                              barClassName="bg-gradient-danger"
-                            />
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Facebook</th>
-                      <td>5,480</td>
-                      <td>
-                        <div className="d-flex align-items-center">
-                          <span className="mr-2">70%</span>
-                          <div>
-                            <Progress
-                              max="100"
-                              value="70"
-                              barClassName="bg-gradient-success"
-                            />
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Google</th>
-                      <td>4,807</td>
-                      <td>
-                        <div className="d-flex align-items-center">
-                          <span className="mr-2">80%</span>
-                          <div>
-                            <Progress max="100" value="80" />
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">Instagram</th>
-                      <td>3,678</td>
-                      <td>
-                        <div className="d-flex align-items-center">
-                          <span className="mr-2">75%</span>
-                          <div>
-                            <Progress
-                              max="100"
-                              value="75"
-                              barClassName="bg-gradient-info"
-                            />
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr>
-                      <th scope="row">twitter</th>
-                      <td>2,645</td>
-                      <td>
-                        <div className="d-flex align-items-center">
-                          <span className="mr-2">30%</span>
-                          <div>
-                            <Progress
-                              max="100"
-                              value="30"
-                              barClassName="bg-gradient-warning"
-                            />
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
+                    {Object.keys(friendDetails).map((k, i) => {
+                      let data = friendDetails[k];
+                      return(
+                        <tr key={i}>
+                            {/*eslint-disable-next-line react/jsx-no-target-blank*/} 
+                            <td>
+                              <Media className="align-items-center">
+                                <span className="avatar avatar-sm rounded-circle">
+                                  <img
+                                    alt="..."
+                                    src={data.picture}
+                                  />
+                                </span>
+                              </Media>
+                            </td>
+                            <td>{data.name}</td>
+                            {data.online && <td>
+                              <img
+                                alt="..."
+                                src={require('../assets/img/theme/Status-user-online-icon.png')}
+                              />
+                            </td>}
+                        </tr>
+                      )
+                    })}
                   </tbody>
                 </Table>
               </Card>
