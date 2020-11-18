@@ -6,7 +6,7 @@ var UserDispatchContext = React.createContext();
 function userReducer(state, action) {
   switch (action.type) {
     case "LOGIN_SUCCESS":
-      return { ...state, isAuthenticated: true, name: 'User', picture: '../../assets/img/theme/team-4-800x800.jpg' };
+      return { ...state, isAuthenticated: true, name: localStorage.name, picture: localStorage.picture };
     case "SIGN_OUT_SUCCESS":
       return { ...state, isAuthenticated: false };
     default: {
