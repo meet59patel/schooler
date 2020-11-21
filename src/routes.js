@@ -1,7 +1,7 @@
 import Index from "./views/Index.js";
-// import Profile from "./views/examples/Profile.js";
-// import Maps from "./views/examples/Maps.js";
-import Login from "./views/examples/Login.js";
+// import Profile from "./views/Pages/Profile.js";
+// import Maps from "./views/Pages/Maps.js";
+import Login from "./views/Pages/Login.js";
 // Import componets here when they are created
 
 var routes = [
